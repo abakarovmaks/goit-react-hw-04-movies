@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { useQuery } from 'react-query';
 import moviesAPI from '../../services/movies-api';
-import Loader from '../Loader';
+import Loader from '../Loader/Loader';
 import styles from './Cast.module.css';
 import comingSoon from '../../images/comingSoon.png';
 

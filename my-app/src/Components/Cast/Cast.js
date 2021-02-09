@@ -30,7 +30,7 @@ export default function Cast({ id }) {
           <ul className={styles.list}>
             {data.cast.map(actor => {
               return (
-                <li className={styles.item} id={actor.cast_id}>
+                <li className={styles.item} key={actor.cast_id}>
                   <img
                     className={styles.image}
                     src={

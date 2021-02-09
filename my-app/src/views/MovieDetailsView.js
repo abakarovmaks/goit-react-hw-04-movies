@@ -35,7 +35,6 @@ export default function MovieDetailsView() {
       if (data.status_code === 34) {
         throw new Error('No details for this movie');
       }
-      console.log(data);
       return data;
     },
     {

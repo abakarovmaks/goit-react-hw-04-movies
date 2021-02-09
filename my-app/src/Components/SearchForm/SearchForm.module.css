@@ -1,8 +1,9 @@
 .form {
-  padding: 20px;
+  padding-top: 90px;
 }
 
 .input {
+  padding: 5px;
   min-width: 300px;
 
   margin-right: 10px;
@@ -11,5 +12,14 @@
 }
 
 .btn {
+  padding: 5px;
+  cursor: pointer;
   font-family: Roboto, sans-serif;
+  transition: color 250ms linear, background-color 250ms linear;
+}
+
+.btn:hover,
+.btn:focus {
+  background-color: rgb(240, 149, 14);
+  color: white;
 }

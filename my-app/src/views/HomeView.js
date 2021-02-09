@@ -11,8 +11,6 @@ export default function HomeView() {
     moviesAPI.getTrendingData,
   );
 
-  console.log(data);
-
   return (
     <>
       {isLoading && <Loader />}

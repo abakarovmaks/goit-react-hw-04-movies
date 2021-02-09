@@ -4,8 +4,10 @@
 
 .wrapper {
   width: 100%;
+  position: fixed;
+  z-index: 999;
 
-  padding: 10px 24px;
+  padding: 20px 24px;
 
   text-align: center;
 
@@ -21,8 +23,9 @@
 
   background-color: transparent;
   color: rgb(241, 74, 74);
-  border: none;
-  outline: none;
+  border-radius: 5px;
+  padding: 10px;
+  /* outline: none; */
 }
 
 .link:not(:last-child) {

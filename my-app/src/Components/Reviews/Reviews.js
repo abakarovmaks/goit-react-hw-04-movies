@@ -7,10 +7,9 @@ import styles from './Reviews.module.css';
 
 export default function Reviews({ id }) {
   const { isLoading, isError, isSuccess, data, error } = useQuery(
-    ['Reviews', id],
+    ['movieReviews', id],
     async () => {
       const data = await moviesAPI.getMovieReviews(id);
-      console.log(data.results);
       if (data.results.length === 0) {
         throw new Error('We dont have any reviews for this movie');
       }

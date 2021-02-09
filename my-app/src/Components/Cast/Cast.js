@@ -14,7 +14,6 @@ export default function Cast({ id }) {
       if (data.cast.length === 0) {
         throw new Error('Cast data is not available');
       }
-      console.log(data.cast);
       return data;
     },
     {

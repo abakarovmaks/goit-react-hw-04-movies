@@ -33,8 +33,6 @@ export default function SearchMoviesView() {
     history.push({ ...location, search: `query=${query}` });
   };
 
-  console.log(data);
-
   return (
     <>
       <SearchForm getSearchQuery={onSearchQueryChange} />

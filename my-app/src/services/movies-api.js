@@ -12,19 +12,19 @@ function getTrendingData() {
   return fetchByURL(url);
 }
 function getSearchData(query) {
-  const url = `${BASE_URL}/search/movie?api_key=${KEY}&language=en-US&${query}`;
+  const url = `${BASE_URL}/search/movie?api_key=${KEY}&language=en-US&query=${query}`;
   return fetchByURL(url);
 }
 function getMovieById(id) {
-  const url = `${BASE_URL}/movie/{movie_id}?api_key=${KEY}&language=en-US`;
+  const url = `${BASE_URL}/movie/${id}?api_key=${KEY}&language=en-US`;
   return fetchByURL(url);
 }
 function getMovieCast(id) {
-  const url = `${BASE_URL}/movie/{movie_id}/credits?api_key=${KEY}&language=en-US`;
+  const url = `${BASE_URL}/movie/${id}/credits?api_key=${KEY}&language=en-US`;
   return fetchByURL(url);
 }
 function getMovieReviews(id) {
-  const url = `${BASE_URL}/movie/{movie_id}/reviews?api_key=${KEY}&language=en-US`;
+  const url = `${BASE_URL}/movie/${id}/reviews?api_key=${KEY}&language=en-US`;
   return fetchByURL(url);
 }
 

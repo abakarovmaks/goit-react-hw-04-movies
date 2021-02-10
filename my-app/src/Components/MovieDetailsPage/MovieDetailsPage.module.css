@@ -1,12 +1,13 @@
 .wrapper {
+  color: #ffffff;
   display: flex;
   width: 100%;
-  padding-top: 70px;
+  padding-top: 15px;
   padding-bottom: 15px;
   padding-left: 15px;
 
-  border-top: 1px solid black;
-  border-bottom: 1px solid black;
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
 }
 
 .image {
@@ -23,6 +24,7 @@
 
 .category {
   font-weight: 500;
+  color: white;
 }
 
 .link {
@@ -35,12 +37,17 @@
   outline: none;
 }
 
+.link:hover,
+.link:focus {
+  color: orange;
+}
+
 .item:not(:last-child) {
   margin-right: 10px;
 }
 
 .activeLink {
-  color: black;
+  color: white;
   font-weight: 700;
 }
 

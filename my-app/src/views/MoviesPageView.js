@@ -6,6 +6,7 @@ import SearchForm from '../Components/SearchForm/SearchForm';
 import MoviesPage from '../Components/MoviesPage/MoviesPage';
 import Loader from '../Components/Loader/Loader';
 import ErrorView from './ErrorView';
+import { toast } from 'react-toastify';
 
 export default function SearchMoviesView() {
   const history = useHistory();
@@ -18,7 +19,10 @@ export default function SearchMoviesView() {
     async () => {
       const data = await moviesAPI.getSearchData(searchQuery);
       if (data.results.length === 0) {
-        throw new Error(`No results for ${searchQuery}. Try another query.`);
+        // throw new Error(`No results for ${searchQuery}. Try another query.`);
+        throw new Error(
+          toast.error(`No results for ${searchQuery}. Try another query.`),
+        );
       }
 
       return data;

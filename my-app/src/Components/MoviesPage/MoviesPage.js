@@ -12,7 +12,7 @@ export default function MoviesPage({ movies, title }) {
 
   return (
     <div className={styles.wrapper}>
-      <h2>{title}</h2>
+      <h2 className={styles.titleSearch}>{title}</h2>
       <ul className={styles.list}>
         {movies.map(movie => {
           const movieSlug = makeSlug(movie.title);

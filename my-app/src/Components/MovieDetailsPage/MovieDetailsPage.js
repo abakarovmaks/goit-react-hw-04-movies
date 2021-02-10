@@ -30,14 +30,6 @@ export default function MovieDetailsPage({ movie }) {
           <p className={styles.text}>{mappedGenres}</p>
         </div>
       </div>
-      {/* <div className={styles.content}>
-        <h2 className={styles.title}>{movie.title}</h2>
-        <p className={styles.text}>User score: {movie.vote_avarage * 10}%</p>
-        <p className={styles.category}>Overview:</p>
-        <p className={styles.text}>{movie.overview}</p>
-        <p className={styles.category}>Genres:</p>
-        <p className={styles.text}>{mappedGenres}</p>
-      </div> */}
       <div className={styles.nav}>
         <p className={styles.category}>Additional information</p>
         <ul className={styles.list}>
